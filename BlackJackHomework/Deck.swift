@@ -9,6 +9,7 @@
 import Foundation
 class Deck {
     var cardDeck: [Card] = [];
+    var current:Bool = false;
     func createDeck() {
         let ranks = [Rank.Ace, Rank.Two, Rank.Three, Rank.Four, Rank.Five, Rank.Six, Rank.Seven, Rank.Eight, Rank.Nine, Rank.Ten, Rank.Jack, Rank.Queen, Rank.King]
         let suits = [Suit.Spades, Suit.Hearts, Suit.Diamonds, Suit.Clubs]
@@ -27,5 +28,6 @@ class Deck {
             cardDeck[randomNumber] = temp
         }
     }
+    
 }
 

@@ -51,8 +51,8 @@ struct Card {
         self.rank = rank
     }
     var description: String {
-        var output = "suit is \(suit.toRaw()),"
-            output += " value is \(rank.values.first)"
+        var output = "\(suit.toRaw()),"
+            output += "\(rank.values.first)"
             if let second = rank.values.second {
                 output += " or \(second)"
             }

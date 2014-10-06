@@ -12,49 +12,79 @@ class ViewController: UIViewController {
     @IBOutlet var dealerScore: UILabel!
     @IBOutlet var playerScore: UILabel!
     @IBOutlet var betAmount: UITextField!
-    @IBOutlet var dealerCards: UITextView!
-    @IBOutlet var playerCards: UITextView!
-    var game = BlackJackGame()
-    var counter:Int = 0
     
-    @IBOutlet var maxAmount: UILabel!
+    @IBOutlet var playerCards: UILabel!
+    @IBOutlet var dealerCards: UILabel!
+    @IBOutlet var playButton: UIButton!
+    @IBOutlet var maxAmount: UITextView!
     @IBOutlet var gameOutcome: UILabel!
+    
+    @IBOutlet var standButton: UIButton!
+    @IBOutlet var hitButton: UIButton!
+    @IBOutlet var nextButton: UIButton!
+    @IBOutlet weak var playerLabel: UILabel!
+    var game = BlackJackGame()
+    
+    var index: Int = 0
+    var counter:Int = 0
+    var moneyStart:Int = 100
+    var currentPlayer:Person = Person ()
     func refresh () {
+        if (index < game.players.count ) { currentPlayer = game.selectPlayers(index) }
+        else {
+            game.dealerHit()
+            index = 0
+            currentPlayer = game.players.first!
+        }
+        if (currentPlayer.stood) {
+            nextButton.hidden = false
+            hitButton.hidden = true
+            standButton.hidden = true
+        }
+        playerLabel.text = String("Player \(index + 1) Score")
         dealerScore.text = String(game.dealer.handSum().strScore)
-        playerScore.text = String(game.player.handSum().strScore)
+        playerScore.text = String(currentPlayer.handSum().strScore)
         dealerCards.text = String(game.dealer.showHand())
-        playerCards.text = String(game.player.showHand())
-        gameOutcome.text = String(game.checkScore())
+        playerCards.text = String(currentPlayer.showHand())
+        gameOutcome.text = String(game.checkScore(currentPlayer))
+        
+        
     }
     
-    @IBAction func play(sender: UIButton) {
-        if (counter == 5) {
-            game.deck.shuffle()
-        }
-        else {
-            counter++ }
-        game.end()
-        game.start()
+    @IBAction func nextButton(sender: UIButton) {
         refresh()
-        
-        var bidAmount = betAmount.text.toInt()
-        var money = maxAmount.text?.toInt()
-        var temp = money! - bidAmount!
-        maxAmount.text = String("$\(temp)")
-        
-        
     }
+    @IBAction func play(sender: UIButton) {
+        game.restart()
+        index = 0
+        nextButton.hidden = true
+        hitButton.hidden = false
+        standButton.hidden = false
+        currentPlayer = game.players.first!
+        refresh()
+        var temp:Int = moneyStart - betAmount.text.toInt()!
+        moneyStart = temp
+        maxAmount.text = String("$\(temp)")
+        if(moneyStart - betAmount.text.toInt()! < 0) {
+            maxAmount.text = String("00")
+            gameOutcome.text = String("You have no money left, sorry!")
+            game.restart()
+            playButton.enabled = false
+            playButton.hidden = true
+        }
+    }
+    
     
     @IBAction func hitButton(sender: UIButton) {
-        game.hit(game.player)
-        game.checkScore()
+        game.hit(currentPlayer)
         refresh()
     }
     
     
     @IBAction func standButton(sender: UIButton) {
-        var foo = game.stand(game.player)
-        game.dealer.showCards()
+        currentPlayer.stood = true
+        game.stand(currentPlayer)
+        index+=1
         refresh()
     }
     

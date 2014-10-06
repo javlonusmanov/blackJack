@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D92A64FD19DB37B600253E7D /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92A64FC19DB37B600253E7D /* Person.swift */; };
+		D92A64FF19DB396D00253E7D /* Dealer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92A64FE19DB396D00253E7D /* Dealer.swift */; };
 		D9D7F7D519D0F1A4000407FC /* BlackJackGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D7F7D419D0F1A4000407FC /* BlackJackGame.swift */; };
 		D9D7F7D719D0F1B3000407FC /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D7F7D619D0F1B3000407FC /* Player.swift */; };
 		D9D7F7D919D0F1C9000407FC /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D7F7D819D0F1C9000407FC /* Card.swift */; };
@@ -31,6 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D92A64FC19DB37B600253E7D /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		D92A64FE19DB396D00253E7D /* Dealer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dealer.swift; sourceTree = "<group>"; };
 		D9D7F7D419D0F1A4000407FC /* BlackJackGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlackJackGame.swift; sourceTree = "<group>"; };
 		D9D7F7D619D0F1B3000407FC /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		D9D7F7D819D0F1C9000407FC /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
@@ -97,6 +101,8 @@
 				D9D7F7DA19D0F1D5000407FC /* Deck.swift */,
 				D9D7F7D619D0F1B3000407FC /* Player.swift */,
 				D9D7F7D819D0F1C9000407FC /* Card.swift */,
+				D92A64FC19DB37B600253E7D /* Person.swift */,
+				D92A64FE19DB396D00253E7D /* Dealer.swift */,
 			);
 			path = BlackJackHomework;
 			sourceTree = "<group>";
@@ -233,6 +239,8 @@
 				D9D7F7D719D0F1B3000407FC /* Player.swift in Sources */,
 				D9D7F7D519D0F1A4000407FC /* BlackJackGame.swift in Sources */,
 				D9D7F7D919D0F1C9000407FC /* Card.swift in Sources */,
+				D92A64FF19DB396D00253E7D /* Dealer.swift in Sources */,
+				D92A64FD19DB37B600253E7D /* Person.swift in Sources */,
 				D9F8A1AC19CED43700E68ABC /* ViewController.swift in Sources */,
 				D9F8A1AA19CED43700E68ABC /* AppDelegate.swift in Sources */,
 			);
