@@ -12,8 +12,8 @@ class Dealer : Person {
         super.init()
     }
     func showCards (){
-        for card in cards {
-            //card.hidden = false
+        for x in 0..<cards.count {
+            cards[x].hidden = false
     }
 }
 }

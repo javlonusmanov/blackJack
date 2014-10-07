@@ -30,16 +30,16 @@ class ViewController: UIViewController {
     var moneyStart:Int = 100
     var currentPlayer:Person = Person ()
     func refresh () {
-        if (index < game.players.count ) { currentPlayer = game.selectPlayers(index) }
+        if (index < game.players.count ){
+            currentPlayer = game.selectPlayers(index)
+        }
         else {
             game.dealerHit()
             index = 0
             currentPlayer = game.players.first!
         }
         if (currentPlayer.stood) {
-            nextButton.hidden = false
-            hitButton.hidden = true
-            standButton.hidden = true
+            buttonHidden(true, standBtn: true, nextBtn: false)
         }
         playerLabel.text = String("Player \(index + 1) Score")
         dealerScore.text = String(game.dealer.handSum().strScore)
@@ -47,19 +47,28 @@ class ViewController: UIViewController {
         dealerCards.text = String(game.dealer.showHand())
         playerCards.text = String(currentPlayer.showHand())
         gameOutcome.text = String(game.checkScore(currentPlayer))
-        
-        
+    }
+    
+    func buttonHidden (hitBtn: Bool, standBtn:Bool, nextBtn: Bool ) {
+        hitButton.hidden = hitBtn
+        standButton.hidden = standBtn
+        nextButton.hidden = nextBtn
     }
     
     @IBAction func nextButton(sender: UIButton) {
+        buttonHidden(false, standBtn: false, nextBtn: true)
         refresh()
     }
     @IBAction func play(sender: UIButton) {
+        
         game.restart()
+        for deck in game.decks {
+            for card in deck.cardDeck {
+                NSLog(card.description)
+            }
+        }
         index = 0
-        nextButton.hidden = true
-        hitButton.hidden = false
-        standButton.hidden = false
+        buttonHidden(false, standBtn: false, nextBtn: true)
         currentPlayer = game.players.first!
         refresh()
         var temp:Int = moneyStart - betAmount.text.toInt()!
@@ -77,6 +86,9 @@ class ViewController: UIViewController {
     
     @IBAction func hitButton(sender: UIButton) {
         game.hit(currentPlayer)
+        gameOutcome.text = String(game.checkScore(currentPlayer))
+        if (gameOutcome.text != "") {
+            buttonHidden(true, standBtn: true, nextBtn: false) }
         refresh()
     }
     
@@ -91,6 +103,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        
     }
     
     override func didReceiveMemoryWarning() {
