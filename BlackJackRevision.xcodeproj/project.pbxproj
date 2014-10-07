@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D92BB6B119E4AA8E00F31C22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92BB6B019E4AA8E00F31C22 /* AppDelegate.swift */; };
+		D92BB6B319E4AA8E00F31C22 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92BB6B219E4AA8E00F31C22 /* ViewController.swift */; };
+		D92BB6B619E4AA8E00F31C22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D92BB6B419E4AA8E00F31C22 /* Main.storyboard */; };
+		D92BB6B819E4AA8E00F31C22 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D92BB6B719E4AA8E00F31C22 /* Images.xcassets */; };
+		D92BB6BB19E4AA8E00F31C22 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D92BB6B919E4AA8E00F31C22 /* LaunchScreen.xib */; };
+		D92BB6C719E4AA8E00F31C22 /* BlackJackRevisionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92BB6C619E4AA8E00F31C22 /* BlackJackRevisionTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D92BB6C119E4AA8E00F31C22 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D92BB6A319E4AA8E00F31C22 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D92BB6AA19E4AA8E00F31C22;
+			remoteInfo = BlackJackRevision;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D92BB6AB19E4AA8E00F31C22 /* BlackJackRevision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlackJackRevision.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D92BB6AF19E4AA8E00F31C22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D92BB6B019E4AA8E00F31C22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D92BB6B219E4AA8E00F31C22 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D92BB6B519E4AA8E00F31C22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D92BB6B719E4AA8E00F31C22 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D92BB6BA19E4AA8E00F31C22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		D92BB6C019E4AA8E00F31C22 /* BlackJackRevisionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlackJackRevisionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D92BB6C519E4AA8E00F31C22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D92BB6C619E4AA8E00F31C22 /* BlackJackRevisionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackJackRevisionTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D92BB6A819E4AA8E00F31C22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D92BB6BD19E4AA8E00F31C22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D92BB6A219E4AA8E00F31C22 = {
+			isa = PBXGroup;
+			children = (
+				D92BB6AD19E4AA8E00F31C22 /* BlackJackRevision */,
+				D92BB6C319E4AA8E00F31C22 /* BlackJackRevisionTests */,
+				D92BB6AC19E4AA8E00F31C22 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D92BB6AC19E4AA8E00F31C22 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D92BB6AB19E4AA8E00F31C22 /* BlackJackRevision.app */,
+				D92BB6C019E4AA8E00F31C22 /* BlackJackRevisionTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D92BB6AD19E4AA8E00F31C22 /* BlackJackRevision */ = {
+			isa = PBXGroup;
+			children = (
+				D92BB6B019E4AA8E00F31C22 /* AppDelegate.swift */,
+				D92BB6B219E4AA8E00F31C22 /* ViewController.swift */,
+				D92BB6B419E4AA8E00F31C22 /* Main.storyboard */,
+				D92BB6B719E4AA8E00F31C22 /* Images.xcassets */,
+				D92BB6B919E4AA8E00F31C22 /* LaunchScreen.xib */,
+				D92BB6AE19E4AA8E00F31C22 /* Supporting Files */,
+			);
+			path = BlackJackRevision;
+			sourceTree = "<group>";
+		};
+		D92BB6AE19E4AA8E00F31C22 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D92BB6AF19E4AA8E00F31C22 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D92BB6C319E4AA8E00F31C22 /* BlackJackRevisionTests */ = {
+			isa = PBXGroup;
+			children = (
+				D92BB6C619E4AA8E00F31C22 /* BlackJackRevisionTests.swift */,
+				D92BB6C419E4AA8E00F31C22 /* Supporting Files */,
+			);
+			path = BlackJackRevisionTests;
+			sourceTree = "<group>";
+		};
+		D92BB6C419E4AA8E00F31C22 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D92BB6C519E4AA8E00F31C22 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D92BB6AA19E4AA8E00F31C22 /* BlackJackRevision */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D92BB6CA19E4AA8E00F31C22 /* Build configuration list for PBXNativeTarget "BlackJackRevision" */;
+			buildPhases = (
+				D92BB6A719E4AA8E00F31C22 /* Sources */,
+				D92BB6A819E4AA8E00F31C22 /* Frameworks */,
+				D92BB6A919E4AA8E00F31C22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlackJackRevision;
+			productName = BlackJackRevision;
+			productReference = D92BB6AB19E4AA8E00F31C22 /* BlackJackRevision.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D92BB6BF19E4AA8E00F31C22 /* BlackJackRevisionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D92BB6CD19E4AA8E00F31C22 /* Build configuration list for PBXNativeTarget "BlackJackRevisionTests" */;
+			buildPhases = (
+				D92BB6BC19E4AA8E00F31C22 /* Sources */,
+				D92BB6BD19E4AA8E00F31C22 /* Frameworks */,
+				D92BB6BE19E4AA8E00F31C22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D92BB6C219E4AA8E00F31C22 /* PBXTargetDependency */,
+			);
+			name = BlackJackRevisionTests;
+			productName = BlackJackRevisionTests;
+			productReference = D92BB6C019E4AA8E00F31C22 /* BlackJackRevisionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D92BB6A319E4AA8E00F31C22 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Javlon Usmanov";
+				TargetAttributes = {
+					D92BB6AA19E4AA8E00F31C22 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					D92BB6BF19E4AA8E00F31C22 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = D92BB6AA19E4AA8E00F31C22;
+					};
+				};
+			};
+			buildConfigurationList = D92BB6A619E4AA8E00F31C22 /* Build configuration list for PBXProject "BlackJackRevision" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D92BB6A219E4AA8E00F31C22;
+			productRefGroup = D92BB6AC19E4AA8E00F31C22 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D92BB6AA19E4AA8E00F31C22 /* BlackJackRevision */,
+				D92BB6BF19E4AA8E00F31C22 /* BlackJackRevisionTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D92BB6A919E4AA8E00F31C22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D92BB6B619E4AA8E00F31C22 /* Main.storyboard in Resources */,
+				D92BB6BB19E4AA8E00F31C22 /* LaunchScreen.xib in Resources */,
+				D92BB6B819E4AA8E00F31C22 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D92BB6BE19E4AA8E00F31C22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D92BB6A719E4AA8E00F31C22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D92BB6B319E4AA8E00F31C22 /* ViewController.swift in Sources */,
+				D92BB6B119E4AA8E00F31C22 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D92BB6BC19E4AA8E00F31C22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D92BB6C719E4AA8E00F31C22 /* BlackJackRevisionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D92BB6C219E4AA8E00F31C22 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D92BB6AA19E4AA8E00F31C22 /* BlackJackRevision */;
+			targetProxy = D92BB6C119E4AA8E00F31C22 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D92BB6B419E4AA8E00F31C22 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D92BB6B519E4AA8E00F31C22 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D92BB6B919E4AA8E00F31C22 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D92BB6BA19E4AA8E00F31C22 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D92BB6C819E4AA8E00F31C22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D92BB6C919E4AA8E00F31C22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D92BB6CB19E4AA8E00F31C22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BlackJackRevision/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D92BB6CC19E4AA8E00F31C22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BlackJackRevision/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D92BB6CE19E4AA8E00F31C22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BlackJackRevisionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlackJackRevision.app/BlackJackRevision";
+			};
+			name = Debug;
+		};
+		D92BB6CF19E4AA8E00F31C22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BlackJackRevisionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlackJackRevision.app/BlackJackRevision";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D92BB6A619E4AA8E00F31C22 /* Build configuration list for PBXProject "BlackJackRevision" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D92BB6C819E4AA8E00F31C22 /* Debug */,
+				D92BB6C919E4AA8E00F31C22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D92BB6CA19E4AA8E00F31C22 /* Build configuration list for PBXNativeTarget "BlackJackRevision" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D92BB6CB19E4AA8E00F31C22 /* Debug */,
+				D92BB6CC19E4AA8E00F31C22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D92BB6CD19E4AA8E00F31C22 /* Build configuration list for PBXNativeTarget "BlackJackRevisionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D92BB6CE19E4AA8E00F31C22 /* Debug */,
+				D92BB6CF19E4AA8E00F31C22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D92BB6A319E4AA8E00F31C22 /* Project object */;
+}
