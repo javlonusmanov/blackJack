@@ -273,7 +273,6 @@
         <!--Enter fields:-->
         <scene sceneID="Sb9-op-Vq6">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Jez-oS-gnL" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController title="Enter fields:" automaticallyAdjustsScrollViewInsets="NO" id="klJ-Tj-dbq" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1Yv-80-CB3">
@@ -285,6 +284,7 @@
                         <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="gEs-Lk-1PC"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jez-oS-gnL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="289.5" y="136"/>
         </scene>
