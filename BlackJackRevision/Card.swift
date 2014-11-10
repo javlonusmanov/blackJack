@@ -13,13 +13,13 @@ enum Suit: Character{
     func simpleDescription() -> String {
         switch self {
         case .Spades:
-            return "s"
+            return "spades"
         case .Hearts:
-            return "h"
+            return "hearts"
         case .Diamonds:
-            return "d"
+            return "diamonds"
         case .Clubs:
-            return "c"
+            return "clubs"
         }
     }
 }
@@ -30,13 +30,13 @@ enum Rank: Int {
     func simpleDescription() -> String {
         switch self {
         case .King:
-            return "k"
+            return "king"
         case .Queen:
-            return "q"
+            return "queen"
         case .Jack:
-            return "j"
+            return "jack"
         case .Ace:
-            return "1"
+            return "ace"
         default:
             return "\(self.toRaw())"
         }
@@ -57,7 +57,7 @@ enum Rank: Int {
 }
 struct Card {
     var currentCard:Int = 0
-    var image:UIImage!
+    var image:UIImage?
     var suit: Suit
     var rank: Rank
     var hidden:Bool = false

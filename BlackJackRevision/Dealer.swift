@@ -17,8 +17,8 @@ class Dealer : Person {
     //this is a dealer specific function, unhiding cards dealer has
     func unhide() {
         for ndx in 0..<cards.count{
-            if (cards[ndx].hidden) {
-                cards[ndx].hidden = false
+            if (cards[ndx]!.hidden) {
+                cards[ndx]!.hidden = false
             }
         }
     }

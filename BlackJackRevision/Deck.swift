@@ -11,15 +11,14 @@ import UIKit
 class Deck {
     var cards:[Card] = []
     
-    
     //creating a deck with values and cards attached to them
     func createDeck() {
         let ranks = [Rank.Ace, Rank.Two, Rank.Three, Rank.Four, Rank.Five, Rank.Six, Rank.Seven, Rank.Eight, Rank.Nine, Rank.Ten, Rank.Jack, Rank.Queen, Rank.King]
         let suits = [Suit.Spades, Suit.Hearts, Suit.Diamonds, Suit.Clubs]
         for ndxS in 0..<suits.count {
             for ndxR in 0..<ranks.count {
-                var imageFileName:UIImage = UIImage(named: "\(suits[ndxS].simpleDescription())\(ranks[ndxR].simpleDescription()).png")
-                //NSLog("\(suits[ndxS].simpleDescription())\(ranks[ndxR].simpleDescription()).png")
+                var imageFileName:UIImage = UIImage(named: "\(ranks[ndxR].simpleDescription())_of_\(suits[ndxS].simpleDescription()).jpg")
+                //NSLog("\(ranks[ndxR].simpleDescription())_of_\(suits[ndxS].simpleDescription()).jpg")
                 cards.append(Card(rank: ranks[ndxR], suit: suits[ndxS], imageFile: imageFileName))
             }
         }

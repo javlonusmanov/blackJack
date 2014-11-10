@@ -9,17 +9,27 @@
 import Foundation
 
 class Game {
-    init (deckSize:Int, playerNumber:Int) {
-        shoe = Shoe(number: deckSize)
-        for i in 0..<playerNumber {
-            addPlayer()
-        }
-    }
     var shoe:Shoe
     var players:[Player] = []
     var dealer: Dealer = Dealer()
     var currentPlayer:Int = 0
     var currentDeck:Int = 0
+    
+    //constructor
+    init (deckSize:Int, playerNumber:Int) {
+        //shoe reference
+        shoe = Shoe(number: deckSize)
+        //depending on users input, appropiate number of players is created.
+        for i in 0..<playerNumber {
+            addPlayer()
+        }
+        //initially each player is given 2 cards.
+        for stud in players {
+            for i in 0..<2 {stud.addCard(getCard(currentDeck)!)}
+        }
+        dealer.addCard(getCard(currentDeck)!)
+        dealer.addCard(getCard(currentDeck)!)
+    }
     
     //adding new player to the game
     func addPlayer() {
@@ -29,6 +39,7 @@ class Game {
     
     //gets a card from the Shoe and current deck
     func getCard(deckNdx:Int) -> Card? {
+        if (shoe.decks[currentDeck].cards.count <= 10 ) {currentDeck = currentDeck + 1 }
         return shoe.decks[deckNdx].drawCard()!
     }
     
@@ -41,6 +52,10 @@ class Game {
     //calls the stand function for player at playerNdx index
     func stand (playerNdx:Int) {
         players[playerNdx].setStand = true
+    }
+    
+    func getPlayerAtIndex(playerNdx:Int) -> Player {
+        return players[playerNdx - 1]
     }
     
 

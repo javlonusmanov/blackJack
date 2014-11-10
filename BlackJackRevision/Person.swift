@@ -5,12 +5,12 @@
 //  Created by Javlon Usmanov on 10/7/14.
 //  Copyright (c) 2014 Javlon Usmanov. All rights reserved.
 //
-
+import UIKit
 import Foundation
 class Person {
     var playerName:String
     var score: Double = 0.0
-    var cards:[Card] = []
+    var cards:[Card?] = []
     var amount: Double = 0.0
     
     //constructor
@@ -34,5 +34,4 @@ class Person {
         var strScore:String = "\(intScore)"
         return (intScore, strScore)
     }
-    
 }

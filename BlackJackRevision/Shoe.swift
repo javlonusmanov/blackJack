@@ -11,9 +11,6 @@ import Foundation
 class Shoe {
     var decks:[Deck] = []
     
-    //deck that is being used atm
-    var currentDeck: Deck = Deck()
-    
     //constructor
     init (number:Int = 1) {
         for ndx in 0..<number {
@@ -22,7 +19,6 @@ class Shoe {
             decks.append(tempDeck)
         }
     }
-    
     //adding a new deck to the Shoe
     func addDeck() {
         var newDeck:Deck = Deck()
