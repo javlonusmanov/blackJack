@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class Game {
     var shoe:Shoe
@@ -25,10 +26,15 @@ class Game {
         }
         //initially each player is given 2 cards.
         for stud in players {
-            for i in 0..<2 {stud.addCard(getCard(currentDeck)!)}
+            for i in 0..<5 {stud.addCard(getCard(currentDeck)!)}
         }
         dealer.addCard(getCard(currentDeck)!)
         dealer.addCard(getCard(currentDeck)!)
+        dealer.addCard(getCard(currentDeck)!)
+        dealer.addCard(getCard(currentDeck)!)
+        dealer.addCard(getCard(currentDeck)!)
+        dealer.hiddenCard = dealer.cards[0]
+        dealer.cards[0].image = UIImage(named: "979a46ed6000168e916a6ef1230c9afb_large.jpg")
     }
     
     //adding new player to the game
@@ -52,6 +58,7 @@ class Game {
     //calls the stand function for player at playerNdx index
     func stand (playerNdx:Int) {
         players[playerNdx].setStand = true
+        currentPlayer = currentPlayer + 1
     }
     
     func getPlayerAtIndex(playerNdx:Int) -> Player {

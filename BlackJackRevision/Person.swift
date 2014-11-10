@@ -10,7 +10,7 @@ import Foundation
 class Person {
     var playerName:String
     var score: Double = 0.0
-    var cards:[Card?] = []
+    var cards:[Card] = []
     var amount: Double = 0.0
     
     //constructor
@@ -31,6 +31,7 @@ class Person {
     //checking the score of each player
     func checkScore() -> (intScore: Int, strScore: String) {
         var intScore:Int = 0
+        for ndx in cards {intScore += ndx.rank.values.first}
         var strScore:String = "\(intScore)"
         return (intScore, strScore)
     }
