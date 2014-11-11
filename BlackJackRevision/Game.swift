@@ -21,21 +21,16 @@ class Game {
         //shoe reference
         shoe = Shoe(number: deckSize)
         //depending on users input, appropiate number of players is created.
-        for i in 0..<playerNumber {
-            addPlayer()
-        }
+        for i in 0..<playerNumber { addPlayer() }
         //initially each player is given 2 cards.
-        for stud in players {
-            for i in 0..<5 {stud.addCard(getCard(currentDeck)!)}
-        }
+        for stud in players {for i in 0..<2 {stud.addCard(getCard(currentDeck)!)}}
         dealer.addCard(getCard(currentDeck)!)
         dealer.addCard(getCard(currentDeck)!)
-        dealer.addCard(getCard(currentDeck)!)
-        dealer.addCard(getCard(currentDeck)!)
-        dealer.addCard(getCard(currentDeck)!)
+        
+        
+        //dealer's hidden card will be stored in a temporary variable, cardBack picture will replace it.
         dealer.hiddenCard = dealer.cards[0]
-        dealer.cards[0].image = UIImage(named: "979a46ed6000168e916a6ef1230c9afb_large.jpg")
-    }
+        dealer.cards[0].image = UIImage(named: "979a46ed6000168e916a6ef1230c9afb_large.jpg")    }
     
     //adding new player to the game
     func addPlayer() {
@@ -51,19 +46,22 @@ class Game {
     
     //calls the hit function for player at playerNdx index
     func hit (playerNdx:Int) {
-       var card = getCard(currentDeck)
-       players[playerNdx].addCard(card!)
+        var card = getCard(currentDeck)
+        players[playerNdx].addCard(card!)
     }
     
     //calls the stand function for player at playerNdx index
     func stand (playerNdx:Int) {
-        players[playerNdx].setStand = true
-        currentPlayer = currentPlayer + 1
+        if (players[playerNdx].stand == false ) {
+            players[playerNdx].setStand = true
+            currentPlayer = currentPlayer + 1
+            if (currentPlayer > players.count - 1) {currentPlayer = 0}
+        }
+        else {
+            currentPlayer = currentPlayer + 1
+            if (currentPlayer > players.count - 1) {currentPlayer = 0}
+        }
     }
     
-    func getPlayerAtIndex(playerNdx:Int) -> Player {
-        return players[playerNdx - 1]
-    }
     
-
 }

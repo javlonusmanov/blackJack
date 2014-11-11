@@ -21,6 +21,7 @@
 		D92BB6DF19E4ABE200F31C22 /* Dealer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92BB6DE19E4ABE200F31C22 /* Dealer.swift */; };
 		D9309EE31A0053AE006CED6F /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9309EE21A0053AE006CED6F /* Game.swift */; };
 		D9570F751A11554700926ACD /* 979a46ed6000168e916a6ef1230c9afb_large.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D9570F741A11554700926ACD /* 979a46ed6000168e916a6ef1230c9afb_large.jpg */; };
+		D96EFDC91A118E0400406365 /* 9-x12-felt-square-yellow.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D96EFDC81A118E0400406365 /* 9-x12-felt-square-yellow.jpg */; };
 		D97325AD1A103C4A00C83576 /* HamiltonSpades.3.gif in Resources */ = {isa = PBXBuildFile; fileRef = D97325AC1A103C4A00C83576 /* HamiltonSpades.3.gif */; };
 		D97325AF1A103EA600C83576 /* ViewControllerEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97325AE1A103EA600C83576 /* ViewControllerEntry.swift */; };
 		D97325B11A1047C700C83576 /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = D97325B01A1047C700C83576 /* Logo.png */; };
@@ -114,6 +115,7 @@
 		D92BB6DE19E4ABE200F31C22 /* Dealer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dealer.swift; sourceTree = "<group>"; };
 		D9309EE21A0053AE006CED6F /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		D9570F741A11554700926ACD /* 979a46ed6000168e916a6ef1230c9afb_large.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 979a46ed6000168e916a6ef1230c9afb_large.jpg; sourceTree = "<group>"; };
+		D96EFDC81A118E0400406365 /* 9-x12-felt-square-yellow.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "9-x12-felt-square-yellow.jpg"; sourceTree = "<group>"; };
 		D97325AC1A103C4A00C83576 /* HamiltonSpades.3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = HamiltonSpades.3.gif; path = ../HamiltonSpades.3.gif; sourceTree = "<group>"; };
 		D97325AE1A103EA600C83576 /* ViewControllerEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerEntry.swift; sourceTree = "<group>"; };
 		D97325B01A1047C700C83576 /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = "<group>"; };
@@ -238,10 +240,11 @@
 		D92BB6AE19E4AA8E00F31C22 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D9570F741A11554700926ACD /* 979a46ed6000168e916a6ef1230c9afb_large.jpg */,
 				D97325B41A10715600C83576 /* Playing Cards */,
 				D97325B21A10691900C83576 /* blackject-img.png */,
+				D96EFDC81A118E0400406365 /* 9-x12-felt-square-yellow.jpg */,
 				D97325B01A1047C700C83576 /* Logo.png */,
+				D9570F741A11554700926ACD /* 979a46ed6000168e916a6ef1230c9afb_large.jpg */,
 				D97325AC1A103C4A00C83576 /* HamiltonSpades.3.gif */,
 				D92BB6AF19E4AA8E00F31C22 /* Info.plist */,
 			);
@@ -424,6 +427,7 @@
 				D97326001A10715600C83576 /* 2_of_diamonds.jpg in Resources */,
 				D973261D1A10715600C83576 /* 9_of_hearts.jpg in Resources */,
 				D97326361A10715600C83576 /* king_of_spades.jpg in Resources */,
+				D96EFDC91A118E0400406365 /* 9-x12-felt-square-yellow.jpg in Resources */,
 				D973261B1A10715600C83576 /* 9_of_clubs.jpg in Resources */,
 				D973262E1A10715600C83576 /* jack_of_spades.jpg in Resources */,
 				D97326401A10715600C83576 /* royalty.png in Resources */,
