@@ -23,9 +23,10 @@ class Game {
         //depending on users input, appropiate number of players is created.
         for i in 0..<playerNumber { addPlayer() }
         //initially each player is given 2 cards.
-        for stud in players {for i in 0..<2 {stud.addCard(getCard(currentDeck)!)}}
+        for stud in players {for i in 0..<2{stud.addCard(getCard(currentDeck)!)}}
         dealer.addCard(getCard(currentDeck)!)
         dealer.addCard(getCard(currentDeck)!)
+        
         
         
         //dealer's hidden card will be stored in a temporary variable, cardBack picture will replace it.

@@ -11,7 +11,7 @@ class Person {
     var playerName:String
     var score: Double = 0.0
     var cards:[Card] = []
-    var amount: Double = 0.0
+    
     
     //constructor
     init (name: String) {

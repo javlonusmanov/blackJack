@@ -22,14 +22,27 @@ class ViewController: UIViewController {
     var plImages:[[UIImageView]] = []
     var plScores:[UILabel] = []
     var plTurns:[UIImageView] = []
+    var plBets:[UITextField] = []
+    var plSums: [UILabel] = []
     
     @IBOutlet weak var hitButton: UIButton!
     @IBOutlet weak var standButton: UIButton!
+    
+    @IBOutlet weak var plOneSum: UILabel!
+    @IBOutlet weak var plOneBet: UITextField!
+    @IBOutlet weak var plTwoSum: UILabel!
+    @IBOutlet weak var plTwoBet: UITextField!
+    @IBOutlet weak var plThreeSum: UILabel!
+    @IBOutlet weak var plThreeBet: UITextField!
+    @IBOutlet weak var plFourSum: UILabel!
+    @IBOutlet weak var plFourBet: UITextField!
+    
     
     @IBOutlet weak var plOneTurn: UIImageView!
     @IBOutlet weak var plTwoTurn: UIImageView!
     @IBOutlet weak var plThreeTurn: UIImageView!
     @IBOutlet weak var plFourTurn: UIImageView!
+    
     
     //player1 cards UIImages
     @IBOutlet weak var plOneImageOne: UIImageView!
@@ -37,6 +50,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var plOneImageThree: UIImageView!
     @IBOutlet weak var plOneImageFour: UIImageView!
     @IBOutlet weak var plOneImageFive: UIImageView!
+    @IBOutlet weak var plOneImageSix: UIImageView!
     @IBOutlet weak var plOneScore: UILabel!
     
     
@@ -47,6 +61,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var plTwoImageFour: UIImageView!
     @IBOutlet weak var plTwoImageFive: UIImageView!
     @IBOutlet weak var plTwoScore: UILabel!
+    @IBOutlet weak var plTwoImageSix: UIImageView!
     
     //player3 cards UIImages
     @IBOutlet weak var plThreeImageOne: UIImageView!
@@ -54,6 +69,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var plThreeImageThree: UIImageView!
     @IBOutlet weak var plThreeImageFour: UIImageView!
     @IBOutlet weak var plThreeImageFive: UIImageView!
+    @IBOutlet weak var plThreeImageSix: UIImageView!
     @IBOutlet weak var plThreeScore: UILabel!
     
     
@@ -63,7 +79,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var plFourImageThree: UIImageView!
     @IBOutlet weak var plFourImageFour: UIImageView!
     @IBOutlet weak var plFourImageFive: UIImageView!
+    @IBOutlet weak var plFourImageSix: UIImageView!
     @IBOutlet weak var plFourScore: UILabel!
+    
     
     //dealer cards UIImages
     @IBOutlet weak var dealerImageOne: UIImageView!
@@ -100,6 +118,8 @@ class ViewController: UIViewController {
     
     //function will be called to get cards of each player and display them in each players UIImageView
     func getPlayerStats() {
+      
+        
         var stand:Int = 0
         refresh()
         dealerScore.text = blackjack.dealer.checkScore("hidden").strScore
@@ -119,6 +139,9 @@ class ViewController: UIViewController {
             for i in 0..<blackjack.players.count {plScores[i].text = checkScore(blackjack.players[i].checkScore().intScore, dealerScore: blackjack.dealer.checkScore("a").intScore)}
             newGame.hidden = false
         }
+        plSums[blackjack.currentPlayer].text = "\(blackjack.players[blackjack.currentPlayer].amount)"
+        var temp:Int = blackjack.players[blackjack.currentPlayer].amount - plBets[blackjack.currentPlayer].text.toInt()!
+        plSums[blackjack.currentPlayer].text = "\(temp)"
     }
     
     //to start a new game, all arrays gets emptied out and will be reinitialized
@@ -169,14 +192,16 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        plOneImages += [plOneImageOne, plOneImageTwo, plOneImageThree, plOneImageFour, plOneImageFive]
-        plTwoImages += [plTwoImageFive, plTwoImageFour, plTwoImageThree, plTwoImageTwo, plTwoImageOne]
-        plThreeImages += [plThreeImageOne, plThreeImageTwo, plThreeImageThree, plThreeImageFour, plThreeImageFive]
-        plFourImages += [plFourImageFive, plFourImageFour, plFourImageThree, plFourImageTwo, plFourImageOne]
+        plOneImages += [plOneImageOne, plOneImageTwo, plOneImageThree, plOneImageFour, plOneImageFive, plOneImageSix]
+        plTwoImages += [plTwoImageOne, plTwoImageTwo,plTwoImageThree, plTwoImageFour, plTwoImageFive, plTwoImageSix]
+        plThreeImages += [plThreeImageOne, plThreeImageTwo, plThreeImageThree, plThreeImageFour, plThreeImageFive, plThreeImageSix]
+        plFourImages += [plFourImageOne, plFourImageTwo, plFourImageThree, plFourImageFour, plFourImageFive, plFourImageSix ]
         plImages += [plOneImages, plTwoImages, plThreeImages, plFourImages]
         dealerImages += [dealerImageOne, dealerImageTwo, dealerImageThree, dealerImageFour, dealerImageFive]
         plScores += [plOneScore, plTwoScore, plThreeScore, plFourScore]
         plTurns += [plOneTurn, plTwoTurn, plThreeTurn, plFourTurn]
+        plBets += [plOneBet, plTwoBet, plThreeBet, plFourBet]
+        plSums += [plOneSum, plTwoSum, plThreeSum, plFourSum]
         blackjack = Game(deckSize: numDecks,playerNumber: numPlayers)
         getPlayerStats()
     }

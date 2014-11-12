@@ -8,9 +8,9 @@
 
 import Foundation
 class Player : Person {
-    var bet:Double = 0.0
+    var bet:Int = 0
     var stand:Bool = false
-    
+    var amount: Int = 100
     //constuctor
     override init (name:String = "Player") {
         super.init(name: name)

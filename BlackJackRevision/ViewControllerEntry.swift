@@ -27,6 +27,10 @@ class ViewControllerEntry: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        alert = UIAlertView()
+        alert.title = "Error"
+        alert.addButtonWithTitle("OK")
+        
     }
     
     override func didReceiveMemoryWarning() {
